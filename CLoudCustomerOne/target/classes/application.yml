@@ -1,0 +1,24 @@
+server:
+  port: 8870
+spring:
+  application:
+    name: customer
+eureka:
+  environment: dev
+  instance:
+    appname: cloud customer
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://cloud.server1.com:8961/eureka/,http://cloud.server2.com:8962/eureka/,http://cloud.server3.com:8963/eureka/
+feign:  
+  hystrix:  
+    enabled: true
+#hystrix:
+#   command:
+#    default:
+#     execution:
+#      isolation:
+#       thread:
+#        timeoutInMilliseconds: 100000
+       

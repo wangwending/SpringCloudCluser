@@ -1,0 +1,14 @@
+server:
+  port: 8963
+
+eureka:
+  environment: dev
+  instance:
+    hostname: cloud.server3.com
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://cloud.server1.com:8961/eureka/,http://cloud.server2.com:8962/eureka/
+  dashboard:
+    path: /dashboard

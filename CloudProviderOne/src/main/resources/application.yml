@@ -1,0 +1,33 @@
+server:
+  port: 8862
+spring:
+  application:
+    name: provider
+
+eureka:
+  environment: dev
+  instance:
+    appname: cloud provider
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://cloud.server1.com:8961/eureka/,http://cloud.server2.com:8962/eureka/,http://cloud.server3.com:8963/eureka/
+      
+#druid:
+#  name: test
+#  url: jdbc:mysql://localhost:3306/WwdMysqlTest?useUnicode=true&amp;characterEncoding=utf-8&useSSL=false
+#  username: root
+#  password: root
+#  validationQuery: select 1 from dual
+#  initialSize: 1
+#  maxWait: 60000
+#  minIdle: 1
+#  testWhileIdle: true
+#  testOnBorrow: false
+#  testOnReturn: false
+#  poolPreparedStatements: true
+#  maxOpenPreparedStatements: 20
+#  
+#mybatis:
+#  typeAliasesPackage: com.wwd.model
+#  configLocation: classpath:META-INF/spring/mybatis-config.xml

@@ -48,7 +48,7 @@ public class MybatisForBoot implements TransactionManagementConfigurer {
 	
 	public org.mybatis.spring.mapper.MapperScannerConfigurer mapperScannerConfigurer() {
 		org.mybatis.spring.mapper.MapperScannerConfigurer configurer = new org.mybatis.spring.mapper.MapperScannerConfigurer();
-		configurer.setBasePackage("om.wwd.mapper");
+		configurer.setBasePackage("com.wwd.mapper");
 		
 		return configurer;
 	}

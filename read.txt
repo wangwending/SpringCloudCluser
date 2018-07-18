@@ -4,3 +4,6 @@ spring cloud集群的配置 首先我的运行环境是Mac OS 10.13 集群配置
 127.0.0.1 cloud.server2.com
 127.0.0.1 cloud.server3.com
 
+
+spring cloud 集群配置中心 CloudConfigCenter
+

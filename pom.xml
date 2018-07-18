@@ -18,7 +18,6 @@
 		<module>CloudProviderTwo</module>
 		<module>CLoudCustomerOne</module>
 		<module>CLoudConfigCenter</module>
-		<module>CloudConfigCenter</module>
 	</modules>
 
 	<parent>
